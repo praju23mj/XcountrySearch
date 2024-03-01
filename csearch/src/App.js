@@ -58,7 +58,7 @@ function App() {
           height="100px"
           width="100px"
           />
-          <h3>{country.name.common}</h3>
+          <h2>{country.name.common}</h2>
         </div>
       ))
       
