@@ -35,18 +35,6 @@ function App() {
     justifyContent: "center",
     alignItems: "center",
   }
-  const countryCard={
-    display:"flex",
-    flexDirection:"column",
-    justifyContent:"center",
-    alignItems:"center",
-    border:"1px solid black",
-    borderRadius:"10px",
-    borderColor:"grey",
-    margin:"10px",
-    padding:"10px",
-    width:"200px"
-  }
 
   const input={
     width:"500px",
@@ -64,7 +52,7 @@ function App() {
       </div>
       <div style={containerStyle}>
       {filteredCountries.map(country=>(
-        <div key={country.name.common} style={countryCard}>
+        <div key={country.name.common} className="countryCard">
           <img src ={country.flags.png}
           alt={country.name.common}
           height="100px"
