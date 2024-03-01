@@ -48,12 +48,6 @@ function App() {
     width:"200px"
   }
 
-  const flags ={
-    height:"100px",
-    width:"100px",
-  }
-
-
   const input={
     width:"500px",
   }
@@ -73,13 +67,15 @@ function App() {
         <div key={country.name.common} style={countryCard}>
           <img src ={country.flags.png}
           alt={country.name.common}
-          style={flags}
+          height="100px"
+          width="100px"
           />
           <h3>{country.name.common}</h3>
         </div>
       ))
       
       }
+       {filteredCountries.length === 0 && ""}
       </div>
      
     </div>
